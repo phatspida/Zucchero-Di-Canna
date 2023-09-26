@@ -13,10 +13,12 @@
 :root{
   --color-white: #fff;
   --color-white-variant: #d8d7d7;
-  --color-black: #000;
+  --color-black: #001327;
   --color-black-variant: #6d6b6b;
-  --color-primary: #fea116;
-  --color-primary-variant: #f58d06;
+  --color-primary: #173d69;
+  --color-primary-variant: #173d69;
+  --color-primary-landing-view-image-overlay: rgba(107, 130, 158, 0.5);
+  --color-grey: #ccc;
 
   --container-width-lg: 90%;
   --container-width-md: 86%;
@@ -76,12 +78,15 @@ nav{
     display: flex;
     align-items: center;  
 }
+.bottom-section ul:first-child{
+  padding-left: 30px; 
+}
 .right-nav .top-section{
     display: flex;
     width: 100%;
     padding: 11px;
-    background: #fff;
-    color: #6d6b6b;
+    background: var(--color-white);
+    color: var(--color-black-variant);
     align-items: center;
 }
 
@@ -105,7 +110,7 @@ nav{
 }
 .right-nav .bottom-section ul li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
     font-size: 15px;
 }
 
@@ -126,7 +131,7 @@ nav{
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(22, 49, 82, 0.5);
+  background-color: var(--color-primary-landing-view-image-overlay);
 }
 
 
@@ -168,7 +173,7 @@ nav{
 }
 
 .cta p:last-child{
-  background-color: #000;
+  background-color: var(--color-black);
 }
 
 .arrow-content{
@@ -268,6 +273,10 @@ nav{
   color: var(--color-primary);
 }
 
+.section-3 .intro h1{
+  color: var(--color-black);
+}
+
 .section-3 .intro span{
   color: var(--color-primary);
 }
@@ -298,6 +307,7 @@ nav{
   text-align: left;
   line-height: 1.6;
 }
+
 
 .description p{
   color: var(--color-black-variant);
@@ -433,7 +443,11 @@ nav{
   background-color: var(--color-primary);
   cursor: pointer;
 }
-
+/*
+.gallery.services-gallery:hover h3, p{
+  color: #ffffff;
+}
+*/
 .image-gallery.services-gallery-thumbnail{
   flex-wrap: wrap;
   gap: 22px;
@@ -523,12 +537,12 @@ nav{
 .about_landing_view::before {
   content: "";
   position: absolute;
-  height: inher;
+  height: inherit;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(22, 49, 82, 0.5);
+  background-color: var(--color-primary-landing-view-image-overlay);
 }
 
 /*------------------------Footer----------------------*/
@@ -545,7 +559,7 @@ nav{
 .content{
   margin: 0 auto;
   width: 83%;
-  color: #ccc;
+  color: var(--color-grey);
   font-size: 16px;
 }
 .company-info{
@@ -591,6 +605,9 @@ nav{
   flex-direction: column;
   align-items: center;
 }
+.footer-inner h2{
+  color: var(--color-black);
+}
 .footer-inner span{
   color: var(--color-primary-variant);
 }
@@ -598,7 +615,7 @@ nav{
   border: 1px solid transparent;
   padding: 10px 15px;
   margin-left: 50px;
-  color: white;
+  color: var(--color-white);
   background: var(--color-primary-variant);
   border-radius: 2px;
   font-size: 17px;
@@ -686,7 +703,7 @@ nav{
   font-size: 0.9rem;
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid var(--color-grey); /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -697,7 +714,7 @@ nav{
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: var(--color-primary-variant);
-  color: white;
+  color: var(--color-white);
   padding: 12px 20px;
   width: 100%;
   border: none;
@@ -710,3 +727,4 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: var(--color-primary);;
 }
+
