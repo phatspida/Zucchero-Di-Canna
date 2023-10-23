@@ -973,6 +973,7 @@ padding-left: 5px;
 }
 
 #submit{
+  display: none;
   border: 1px solid transparent;
   padding: 10px 15px;
   margin-left: 10px;
@@ -984,6 +985,7 @@ padding-left: 5px;
 }
 
 .email-input-box{
+  visibility: hidden;
   border: 1px solid var(--color-white-variant);
   border-radius: 2px;
   padding: 2px;
@@ -993,6 +995,7 @@ padding-left: 5px;
 }
 
 #search-box{
+  display: none;
   font-size: 16px;
   padding-left: 20px;
 }
