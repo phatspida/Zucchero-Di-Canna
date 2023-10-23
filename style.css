@@ -20,9 +20,9 @@
   --color-primary-landing-view-image-overlay: rgba(107, 130, 158, 0.5);
   --color-grey: #ccc;
 
-  --container-width-lg: 90%;
+  --container-width-lg: 100%;
   --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-width-sm: 100%;
 
   --scrollbar-track: #f1f1f1;
   --scrollbar-thumb: #cac3c3;
@@ -54,6 +54,7 @@ html{
 body{
     background-color: #efefef;
     font-family: Arial, 'Montserrat', 'sans-serif';
+    width: var(--container-width-lg);
 }
 
 /*------------------------------Navigation----------------------------------*/
@@ -725,6 +726,289 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: var(--color-primary);;
+  background-color: var(--color-primary);
 }
+
+/*========================= MEDIA QUERIES (MEDIUM DEVICES) ============================*/
+@media screen and (max-width: 1024px){
+  body {
+    width: var(--container-width-md);
+  }
+}
+
+/*========================= MEDIA QUERIES (SMALLER DEVICES) ============================*/
+@media screen and (max-width: 600px){
+  body{
+    width: var(--container-width-sm);
+  }
+
+ /*--------------------------------Scroll Bar--------------------------------------*/
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  /*------------------------------Navigation----------------------------------*/
+nav{
+  display: flex;
+  background: var(--color-black)
+}
+.left-nav{
+  width: 0;
+  display: none;
+}
+.right-nav{
+  width: 100%;
+}
+.bottom-section{
+  padding: 5px 0; 
+  margin: 0;
+}
+.bottom-section ul{
+  display: flex;
+  align-items: center;  
+}
+.bottom-section ul:first-child{
+padding-left: 5px; 
+}
+.right-nav .top-section{
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  background: var(--color-white);
+  color: var(--color-black-variant);
+  align-items: center;
+}
+
+.right-nav .top-section .left-column{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.right-nav .top-section .right-column{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+.right-nav .bottom-section ul li{
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding-right: 10px;
+  list-style: none;
+  justify-content: flex-start;
+}
+.right-nav .bottom-section ul li a{
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 10px;
+}
+
+/*
+
+
+  --color-white: #fff;
+  --color-white-variant: #d8d7d7;
+  --color-black: #001327;
+  --color-black-variant: #6d6b6b;
+  --color-primary: #173d69;
+  --color-primary-variant: #173d69;
+  --color-primary-landing-view-image-overlay: rgba(107, 130, 158, 0.5);
+  --color-grey: #ccc;
+
+  --container-width-lg: 100%;
+  --container-width-md: 86%;
+  --container-width-sm: 95%;
+
+  --scrollbar-track: #f1f1f1;
+  --scrollbar-thumb: #cac3c3;
+  --scrollbar-thumb-hover: #b8b8b8;
+
+*/
+
+
+
+
+
+/*-----------------------------------CONTACT US----------------------------*/
+.contact-user{
+  width: var(--container-width-sm);
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 15rem;
+}
+.contact-user .intro{
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.contact-user .intro h4{
+  margin-bottom: 1.3rem;
+}
+.contact-user .intro h1{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.contact-user span{
+  color: var(--color-primary-variant);
+}
+.bgn{
+  display: block;
+  margin: 0 15px;
+}
+
+.bgn p{
+  color: var(--color-black-variant);
+  margin-top: 10px;
+}
+.booking, .general, .number{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.booking h4, .general h4, .number h4{
+  font-size: 15px;
+}
+
+.contact-user .locate-user{
+  display: block;
+  margin-top: 3rem;
+}
+.contact-user .locate-user .contact-form{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.contact-form iframe{
+  max-width: 100%;
+  height: 350px;
+}
+
+.form-details input[type=text], textarea {
+  font-size: 0.9rem;
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */ 
+  border: 1px solid var(--color-grey); /* Gray border */
+  border-radius: 3px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+
+
+
+/*------------------------Footer----------------------*/
+
+.footer{
+  position: relative;
+  background: var(--color-black);
+  width: 100%;
+  height: auto;
+  padding-top: 12%;
+  margin-top: 6%;
+}
+
+  /*---------------------Others----------------------*/
+.content{
+  margin: 0 auto;
+  width: 83%;
+  color: var(--color-grey);
+  font-size: 16px;
+}
+.company-info{
+  display: block;
+}
+.show-base{
+  width: 90%;
+  padding: 2px 20px;
+  margin-bottom: 20px;
+}
+.show-base p{
+  line-height: 1.8;
+}
+.show-base h3{
+  font-size: medium;
+}
+.show-base i{
+  padding-right: 20px;
+}
+
+.footer-subscription, .footer-mid{
+  border: 1px solid var(--color-white-variant);
+  background: transparent;
+}
+.footer-subscription{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateY(-50%);
+}
+.footer-mid{
+  margin: 4px;
+  padding: 10px 0;
+  background-color: var(--color-white);
+}
+.footer-inner{
+  border: 2px solid transparent;
+  background: var(--color-white);
+  text-align: center;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-inner h2{
+  color: var(--color-black);
+}
+.footer-inner span{
+  color: var(--color-primary-variant);
+}
+#submit{
+  border: 1px solid transparent;
+  padding: 10px 13px;
+  
+  color: var(--color-white);
+  background: var(--color-primary-variant);
+  border-radius: 2px;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.email-input-box{
+  border: 1px solid var(--color-white-variant);
+  border-radius: 2px;
+  padding: 5px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-box{
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.content-intro{
+  background: var(--color-primary);
+  color: var(--color-black);
+  padding: 20px;
+  width: 100%;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.copyright-line{
+  margin-top: 50px;
+  padding-top: 29px;
+  border-top: 1px solid var(--color-black-variant);
+}
+
+
+}
+
+
 
