@@ -55,6 +55,7 @@ body{
     background-color: #efefef;
     font-family: Arial, 'Montserrat', 'sans-serif';
     width: var(--container-width-lg);
+    
 }
 
 /*------------------------------Navigation----------------------------------*/
@@ -966,10 +967,11 @@ padding-left: 5px;
 .footer-inner span{
   color: var(--color-primary-variant);
 }
+
 #submit{
   border: 1px solid transparent;
-  padding: 10px 13px;
-  
+  padding: 10px 15px;
+  margin-left: 10px;
   color: var(--color-white);
   background: var(--color-primary-variant);
   border-radius: 2px;
@@ -980,8 +982,8 @@ padding-left: 5px;
 .email-input-box{
   border: 1px solid var(--color-white-variant);
   border-radius: 2px;
-  padding: 5px;
-  width: 80%;
+  padding: 2px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -992,6 +994,7 @@ padding-left: 5px;
 }
 
 .content-intro{
+  margin-top: 150px;
   background: var(--color-primary);
   color: var(--color-black);
   padding: 20px;
