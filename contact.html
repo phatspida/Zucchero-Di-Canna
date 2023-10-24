@@ -30,7 +30,7 @@
             </div>
 
             <div class="bottom-section">
-                <ul>
+                <ul id="myLinks">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT US</a></li>
                     <li><a href="./stillinprogress.html">RESERVATION</a></li>
@@ -146,5 +146,17 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
 </body>
 </html>

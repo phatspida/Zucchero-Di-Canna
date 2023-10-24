@@ -754,6 +754,7 @@ nav{
   background: var(--color-black);
   overflow: hidden;
   position: relative;
+  display: block;
 }
 
 .left-nav{
@@ -769,7 +770,7 @@ nav{
 }
 
 .right-nav{
-  display: none;
+  width: 100%;
 }
 
 .right-nav .top-section{
@@ -777,20 +778,37 @@ nav{
 }
 
 .right-nav .bottom-section{
-  padding: 5px 0; 
-  margin: 0;
+  padding: 5px 0;
+  width: 100%;
 }
-.right-nav .bottom-section ul{
+
+
+
+
+#myLinks{
   display: none;
-  align-items: center;  
+  width: 100%;
 }
-.right-nav .bottom-section a{
+
+
+
+
+.right-nav .bottom-section ul a{
   color: white;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: block; 
+  display: block;
+  border-bottom: 1px solid white;
+  width: 100%;
 }
+
+.right-nav .bottom-section ul a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+
 
 .left-nav a.icon{
   display: block;
