@@ -793,7 +793,7 @@ nav{
 
 .right-nav .bottom-section ul li{
   border-bottom: 1px solid white;
-  padding: 12px 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -803,16 +803,17 @@ nav{
 
 .right-nav .bottom-section ul a{
   margin: 0;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
   width: 100%;
 }
 
-.right-nav .bottom-section ul li:hover{
+.right-nav .bottom-section ul li a:hover{
   background-color: #ddd;
   color: black;
+  font-weight: 700;
 }
 
 
