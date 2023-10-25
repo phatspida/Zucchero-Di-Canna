@@ -678,6 +678,9 @@ nav{
   margin: 0 40px;
   gap: 2.5rem;
 }
+.bgn h4{
+  font-size: 18px;
+}
 .bgn p{
   color: var(--color-black-variant);
   margin-top: 10px;
@@ -751,7 +754,6 @@ body{
 
 /*------------------------------Navigation----------------------------------*/
 nav{
-  background: var(--color-black);
   overflow: hidden;
   position: relative;
   display: block;
@@ -759,10 +761,8 @@ nav{
 
 .left-nav{
   width: 100%;
-  display: flex;
   justify-content: space-between;
   padding: 20px 10px;
-  align-items: center;
 }
 
 .left-nav img{
@@ -778,8 +778,9 @@ nav{
 }
 
 .right-nav .bottom-section{
-  padding: 5px 0;
+  padding: 5px 0 0 0;
   width: 100%;
+  
 }
 
 #myLinks{
@@ -792,18 +793,13 @@ nav{
 }
 
 .right-nav .bottom-section ul li{
-  border-bottom: 1px solid white;
   padding: 0;
   margin: 0;
 }
 
-.right-nav .bottom-section ul li:first-child{
-  border-top: 1px solid white;
-}
-
 .right-nav .bottom-section ul a{
   margin: 0;
-  padding: 20px 16px;
+  padding: 16px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -833,12 +829,6 @@ nav{
 }
 
 
-
-
-
-
-
-
 /*-----------------------------------CONTACT US----------------------------*/
 .contact-user{
   width: var(--container-width-sm);
@@ -862,7 +852,7 @@ nav{
 }
 .bgn{
   display: block;
-  margin: 0 15px;
+  margin: 0 18px;
 }
 
 .bgn p{
@@ -875,7 +865,8 @@ nav{
 }
 
 .booking h4, .general h4, .number h4{
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .contact-user .locate-user{
@@ -941,9 +932,11 @@ nav{
   font-size: 14px;
   font-weight: 600;
   padding-bottom: 8px;
+  color: var(--color-white);
 }
 .show-base h3{
   font-size: medium;
+  color: var(--color-white);
 }
 .show-base i{
   padding-right: 10px;
@@ -977,12 +970,27 @@ nav{
 .footer-inner h2{
   color: var(--color-black);
 }
-.footer-inner span{
+.footer-inner span::before{
   color: var(--color-primary-variant);
+  content: "\a";
+  white-space: pre;
+}
+
+.email-input-box{
+  border: 1px solid var(--color-white-variant);
+  border-radius: 2px;
+  padding: 2px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-box{
+  font-size: 16px;
+  padding-left: 20px;
 }
 
 #submit{
-  display: none;
   border: 1px solid transparent;
   padding: 10px 15px;
   margin-left: 10px;
@@ -993,31 +1001,16 @@ nav{
   text-transform: uppercase;
 }
 
-.email-input-box{
-  visibility: hidden;
-  border: 1px solid var(--color-white-variant);
-  border-radius: 2px;
-  padding: 2px;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-
-#search-box{
-  display: none;
-  font-size: 16px;
-  padding-left: 20px;
-}
-
 .content-intro{
   margin: 150px 0 50px 0;
   background: var(--color-primary);
-  color: var(--color-black);
+  color: var(--color-white);
   padding: 20px;
   width: 100%;
   line-height: 1.5;
   font-weight: 700;
   font-size: 14px;
+  border-radius: 2px;
 }
 
 .copyright-line{
