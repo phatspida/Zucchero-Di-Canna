@@ -993,6 +993,7 @@ nav{
 
 #submit{
   border: 1px solid transparent;
+  width: 40px;
   padding: 10px 15px;
   position: absolute;
   color: var(--color-white);
