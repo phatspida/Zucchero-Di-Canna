@@ -829,6 +829,73 @@ nav{
 }
 
 
+/*----------------------------------Section 2 ----------------------------------------*/
+.section-2{
+  display: block;
+  max-height: 140vh;
+  padding: 25px;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.left-col{
+  width: 100%;
+}
+
+.left-col p{
+  margin: 8px 0 40px 0;
+  font-size: 14px;
+  color: var(--color-black-variant);
+}
+
+.left-col h1{
+  color: var(--color-black);
+  font-size: 30px;
+}
+
+.left-col span{
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.left-col #intro-text{
+  line-height: 2;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+
+.right-col {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.right-col img{
+  max-width: 180px;
+  max-height: 235px;
+}
+
+.right-col .display-a{
+  width: 130px;
+  height: 160px;
+}
+
+.right-col .display-c{
+  width: 100px;
+  height: 130px;
+  align-self: flex-start;
+}
+
+.right-col .display-d{
+  width: 150px;
+  height: 200px;
+  align-self: flex-start;
+}
+
+
 /*-----------------------------------CONTACT US----------------------------*/
 .contact-user{
   width: var(--container-width-sm);
