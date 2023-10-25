@@ -741,7 +741,7 @@ input[type=submit]:hover {
 }
 
 /*========================= MEDIA QUERIES (SMALLER DEVICES) ============================*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 
 body{
   width: var(--container-width-sm);
