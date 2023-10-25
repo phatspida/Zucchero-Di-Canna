@@ -983,8 +983,7 @@ nav{
   padding: 2px;
   width: 90%;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  
 }
 
 #search-box{
@@ -995,6 +994,7 @@ nav{
 #submit{
   border: 1px solid transparent;
   padding: 10px 15px;
+  
   color: var(--color-white);
   background: var(--color-primary-variant);
   border-radius: 2px;
