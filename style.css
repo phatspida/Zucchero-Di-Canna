@@ -994,7 +994,7 @@ nav{
 #submit{
   border: 1px solid transparent;
   padding: 10px 15px;
-  margin-left: 10px;
+  
   color: var(--color-white);
   background: var(--color-primary-variant);
   border-radius: 2px;
