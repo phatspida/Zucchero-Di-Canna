@@ -982,23 +982,25 @@ nav{
   border-radius: 2px;
   padding: 2px;
   width: 90%;
-  
+  position: absolute;
 }
 
 #search-box{
   font-size: 16px;
   padding-left: 20px;
+
 }
 
 #submit{
   border: 1px solid transparent;
   padding: 10px 15px;
-  
+  position: relative;
   color: var(--color-white);
   background: var(--color-primary-variant);
   border-radius: 2px;
   font-size: 17px;
   text-transform: uppercase;
+  right: 0;
 }
 
 .content-intro{
