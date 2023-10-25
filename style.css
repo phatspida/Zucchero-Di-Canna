@@ -741,11 +741,12 @@ input[type=submit]:hover {
 }
 
 /*========================= MEDIA QUERIES (SMALLER DEVICES) ============================*/
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
 
 body{
   width: var(--container-width-sm);
   border: 1px solid red;
+  margin: 0;
 }
 
 /*--------------------------------Scroll Bar--------------------------------------*/
