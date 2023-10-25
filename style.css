@@ -741,17 +741,16 @@ input[type=submit]:hover {
 }
 
 /*========================= MEDIA QUERIES (SMALLER DEVICES) ============================*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
 
 body{
   width: var(--container-width-sm);
   border: 1px solid red;
-  margin: 0;
 }
 
 /*--------------------------------Scroll Bar--------------------------------------*/
 ::-webkit-scrollbar {
-  width: 2px;
+  -webkit-appearance: none;
 }
 
 /*------------------------------Navigation----------------------------------*/
