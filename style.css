@@ -745,7 +745,6 @@ input[type=submit]:hover {
 
 body{
   width: var(--container-width-sm);
-  border: 1px solid red;
 }
 
 /*--------------------------------Scroll Bar--------------------------------------*/
@@ -989,8 +988,6 @@ nav{
 #search-box{
   font-size: 16px;
   padding-left: 20px;
-  
-
 }
 
 #submit{
