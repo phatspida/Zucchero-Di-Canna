@@ -745,6 +745,7 @@ input[type=submit]:hover {
 
 body{
   width: var(--container-width-sm);
+  border: 1px solid red;
 }
 
 /*--------------------------------Scroll Bar--------------------------------------*/
