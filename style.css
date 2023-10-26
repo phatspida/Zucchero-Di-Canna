@@ -1002,7 +1002,7 @@ nav{
 
 .room-btn.cta p{
   padding: 0.7rem 1.7rem;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 2px;
 }
 
@@ -1010,7 +1010,7 @@ nav{
 /*---------------------------Section-4-------------------------------*/
 .section-4{
   background-color: transparent;
-  margin: 50px 0 70px 0;
+  margin: 50px 0 70px;
   min-height: 35vh;
   display: block;
 }
