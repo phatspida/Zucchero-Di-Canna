@@ -194,8 +194,9 @@ nav{
 }
 
 /*----------------------------------Section 2 ----------------------------------------*/
+
 .section-2{
-  height: 120vh;
+  min-height: 120vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -226,6 +227,12 @@ nav{
   line-height: 2;
   text-align: justify;
   letter-spacing: 2px;
+}
+
+.left-col #about-intro-text{
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: left;
 }
 
 .right-col {
@@ -496,18 +503,8 @@ nav{
   color: var(--color-black);
 }
 
-/*---------------------------------Footer--------------------------------------*/
-
   
 /*--------------------------About Us-----------------------*/
-.about-page-section-2{
-  margin-bottom: 9rem;
-}
-.left-col #about-intro-text{
-  line-height: 1.5;
-  letter-spacing: 1px;
-  text-align: left;
-}
 
 .about_landing_view_content{
   position: relative;
@@ -830,23 +827,29 @@ nav{
 
 
 /*----------------------------------Section 2 ----------------------------------------*/
+
+
 .section-2{
   display: block;
   padding: 20px;
-  min-height: 170vh;
-  margin: 3rem 0 0 0;
+  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
 }
 
 .left-col{
   width: 100%;
+  margin: 30px 0;
 }
 
 .left-col p{
-  padding: 8px 0 40px 0;
   font-size: 14px;
   color: var(--color-black-variant);
 }
-
+.left-col h4{
+  font-size: 15px;
+  font-weight: 800;
+}
 .left-col h1{
   color: var(--color-black);
   font-size: 22px;
@@ -864,7 +867,7 @@ nav{
   text-align: justify;
 }
 
-.section-2 .right-col {
+.right-col {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
