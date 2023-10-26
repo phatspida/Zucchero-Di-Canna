@@ -348,7 +348,7 @@ nav{
 /*---------------------------Section-4-------------------------------*/
 .section-4{
   display: flex;
-  height: 35vw;
+  min-height: 35vw;
   background-color: var(--color-black);
   margin-top: 50px;
 }
@@ -870,7 +870,7 @@ nav{
 }
 
 .left-col p{
-  font-size: 14px;
+  font-size: 15px;
   color: var(--color-black-variant);
 }
 .left-col h4{
@@ -889,9 +889,9 @@ nav{
   color: var(--color-primary);
 }
 
-.left-col #about-intro-text{
-  line-height: 2;
-  text-align: justify;
+.left-col #intro-text{
+  line-height: 1.6;
+  text-align: left;
 }
 
 .right-col {
@@ -924,6 +924,161 @@ nav{
   width: 150px;
   height: 200px;
   align-self: flex-start;
+}
+
+
+/*--------------------- Section 3----------------------------*/
+.section-3{
+  margin: 0 0 6rem 0;
+  padding: 1px solid red;
+}
+
+.section-3 .intro{
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+
+.section-3 .intro h4, .section-3 .bgn h4{
+  color: var(--color-primary);
+}
+
+.section-3 .intro h1{
+  color: var(red);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.section-3 .intro span{
+  color: var(--color-primary);
+}
+
+.image-gallery{
+  display: block;
+  padding: 0 20px;
+}
+
+.gallery{
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+.gallery img{
+  height: 70vw;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .description{
+  padding: 15px 24px;
+  line-height: 1.6;
+}
+
+
+.description p{
+  color: var(--color-black-variant);
+  text-align: left;
+}
+
+.description h3{
+  color: var(--color-black);
+  font-size: 20px;
+  text-align: left;
+}
+
+.room-btn{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.room-btn.cta{
+  margin: 0;
+  padding: 0 15px 15px 15px;
+}
+
+.room-btn.cta p{
+  padding: 0.7rem 1.7rem;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+
+/*---------------------------Section-4-------------------------------*/
+.section-4{
+  background-color: transparent;
+  margin: 50px 0 70px 0;
+  min-height: 35vh;
+  display: block;
+}
+
+.section-4-content{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.5;
+  width: 100%;
+}
+
+.contents{
+  margin: 0;
+  padding: 30px 50px 50px 50px;
+}
+
+.section-4-content p:first-child{
+  text-transform: uppercase;
+}
+
+.section-4-content .cta p:last-child{
+  background-color: var(--color-white-variant);
+}
+
+.section-4-content .cta p:last-child a{
+  color: var(--color-black);
+}
+
+.section-4-video img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ctrbutton{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.ctrbutton p{
+  display: block;
+  background-color: var(--color-primary);
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.ctrbutton p a{
+  color: var(--color-white);
+  font-size: 14px;
+}
+
+.ctrbutton p:last-child{
+  background-color: var(--color-white-variant);
+}
+
+.ctrbutton p:last-child a{
+  color: var(--color-black);
+}
+
+.section-4 .section-4-content #chek{
+  font-style: italic;
+}
+
+.section-4 .section-4-content .contents h1{
+  font-size: 28px;
+  margin-bottom: 0.8rem;
 }
 
 
