@@ -941,7 +941,8 @@ nav{
 /*----------------------------------Section 2 ----------------------------------------*/
 
 .index_page_section-2{
-  max-height: 90vh;
+  border: 1px solid red;
+  max-height: 100vh;
   display: block;
   padding: 20px;
   margin: 0;
