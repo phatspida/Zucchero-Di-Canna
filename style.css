@@ -940,6 +940,26 @@ nav{
 
 /*----------------------------------Section 2 ----------------------------------------*/
 
+.index_page_section-2{
+  max-height: 90vh;
+  display: block;
+  padding: 20px;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+
+/*
+.section-2{
+  min-height: 120vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.1rem;
+  margin: 0 4.1rem;
+}
+*/
 
 .section-2{
   display: block;
@@ -952,6 +972,7 @@ nav{
 .left-col{
   width: 100%;
   margin: 30px 0;
+  
 }
 
 .left-col p{
@@ -959,7 +980,7 @@ nav{
   color: var(--color-black-variant);
 }
 .left-col h4{
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 800;
 }
 .left-col h1{
@@ -1013,9 +1034,9 @@ nav{
 
 
 /*--------------------- Section 3----------------------------*/
+
 .section-3{
   margin: 0 0 6rem 0;
-  padding: 1px solid red;
 }
 
 .section-3 .intro{
