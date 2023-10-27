@@ -901,6 +901,7 @@ nav{
   margin: 40px 10px;
   display: flex;
   justify-content: space-between;
+  gap: 5px;
 }
 
 .cta p{
