@@ -941,12 +941,12 @@ nav{
 /*----------------------------------Section 2 ----------------------------------------*/
 
 .index_page_section-2{
-  max-height: 120vh;
+  min-height: 120vh;
   display: block;
   padding: 20px;
-  margin: 0;
+  margin: 0 0;
   margin-top: 2rem;
-  margin-bottom: 8rem;
+  margin-bottom: 0;
 }
 
 /*
@@ -1038,6 +1038,7 @@ nav{
 
 .section-3{
   margin: 0 0 6rem 0;
+  border: 1px solid blue;
 }
 
 .section-3 .intro{
@@ -1103,7 +1104,7 @@ nav{
 }
 
 .room-btn.cta{
-  margin: 0;
+  margin: 0 auto;
   padding: 0 15px 15px 15px;
 }
 
