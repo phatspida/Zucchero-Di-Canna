@@ -836,8 +836,6 @@ nav{
   font-weight: 700;
 }
 
-
-
 .left-nav a.icon{
   display: block;
   font-size: 30px;
@@ -852,6 +850,88 @@ nav{
   border-radius: 5px;
 }
 
+/*---------------------------------Section 1--------------------------------------*/
+.landing_view{
+  position: relative;
+  width: 100%;
+  max-height: 50vh;
+  display: flex;
+  background-image: url('images/bgimg3.jpg');
+  background-size: cover;
+}
+
+.landing_view::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: var(--color-primary-landing-view-image-overlay);
+}
+
+
+.landing_view_content{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  z-index: 2;
+}
+
+.mid-content{
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.mid-content h1{
+  padding-top: 1.3rem;
+  font-size: 2rem;
+}
+
+.cta{
+  width: 280px;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta p{
+  text-transform: uppercase;
+  display: block;
+  background-color: var(--color-primary);
+  padding: 0.9rem 0.9rem;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cta a{
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.cta p:last-child{
+  background-color: var(--color-black);
+}
+
+.arrow-content{
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+}
+
+
+.fa-chevron-left {
+  padding-left: 50px;
+}
+
+.fa-chevron-right {
+  padding-right: 50px;
+}
 
 /*----------------------------------Section 2 ----------------------------------------*/
 
@@ -860,7 +940,7 @@ nav{
   display: block;
   padding: 20px;
   margin: 0;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 8rem;
 }
 
@@ -1311,6 +1391,44 @@ nav{
 
 .unfinished_site #contact{
   background-color: red;
+}
+
+/*---------------------------------Section 6--------------------------------------*/
+.landing_view.testimonials{
+  height: auto;
+  background-image: url('images/bgimg1.png');
+  margin-bottom: 15rem;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+
+.testimonials_content{
+  width: 75%;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.testimonials-left-col, .testimonials-right-col{
+  width: 47%;
+  z-index: 100;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 30px;
+  line-height: 1.6;
+  color: var(--color-black-variant);
+}
+
+.testimonials-left-col p, .testimonials-right-col p{
+  text-align: left;
+}
+
+.testimoner{
+  padding: 10px 20px 0 20px;
+}
+
+.testimoner h4{
+  color: var(--color-black);
 }
 }
 
